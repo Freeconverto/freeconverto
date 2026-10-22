@@ -1,268 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Free Image Converter Online (No Upload, JPG, PNG, WebP, HEIC)</title>
+<title>Free Online File Converter: Image, PDF &amp; Word Tools (No Watermark)</title>
 
-<meta name="description" content="Convert WebP to JPG, PNG to WebP, HEIC to JPG online free without upload. Fast browser-based image converter with no watermark and batch support.">
+<meta name="description" content="Free online converter for images and documents. Convert WebP to JPG, HEIC to JPG, PNG to ICO, compress and resize images, Word to PDF, PDF to Word and OCR PDF. No signup, no watermark.">
 
 <link rel="canonical" href="https://freeconverto.github.io/freeconverto/">
 
-<meta property="og:title" content="Free Image Converter Online – No Upload Required">
-<meta property="og:description" content="Convert images instantly in your browser. No upload, no watermark. Supports JPG, PNG, WebP, HEIC, AVIF.">
+<meta property="og:title" content="FreeConverto: Free Image, PDF & Word Converter Tools">
+<meta property="og:description" content="Convert WebP to JPG, HEIC to JPG, Word to PDF, PDF to Word and more. Free, no watermark, no signup.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://freeconverto.github.io/freeconverto/">
 <meta property="og:image" content="https://freeconverto.com/favicon.png">
 
 <style>
-body{
-font-family:Arial,Helvetica,sans-serif;
-margin:0;
-background:#f6f8fb;
-color:#333;
-line-height:1.6;
-}
-header{
-background:#111827;
-color:white;
-padding:60px 20px;
-text-align:center;
-}
-header h1{
-margin:0;
-font-size:38px;
-}
-header p{
-margin-top:10px;
-font-size:18px;
-opacity:.9;
-}
-.container{
-max-width:1000px;
-margin:auto;
-padding:40px 20px;
-}
-h2{
-margin-top:40px;
-color:#111827;
-}
-.card{
-background:white;
-padding:25px;
-margin-bottom:25px;
-border-radius:8px;
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
-}
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-}
-.feature{
-background:white;
-padding:15px;
-border-radius:6px;
-box-shadow:0 1px 6px rgba(0,0,0,0.05);
-}
-.cta{
-text-align:center;
-margin-top:40px;
-}
-.cta a{
-background:#2563eb;
-color:white;
-text-decoration:none;
-padding:16px 30px;
-border-radius:6px;
-font-weight:bold;
-}
-footer{
-background:#111827;
-color:#ccc;
-text-align:center;
-padding:20px;
-margin-top:50px;
-font-size:14px;
-}
-footer a{
-color:white;
-text-decoration:none;
-margin:0 10px;
-}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f6f8fb;color:#333;line-height:1.6;}
+header{background:#111827;color:white;padding:60px 20px;text-align:center;}
+header h1{margin:0;font-size:38px;}
+header p{margin-top:10px;font-size:18px;opacity:.9;}
+.container{max-width:1000px;margin:auto;padding:40px 20px;}
+h2{margin-top:0;color:#111827;}
+h3{color:#111827;margin-bottom:6px;}
+.card{background:white;padding:25px;margin-bottom:25px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+.features,.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:15px;}
+.feature,.tool{background:#f9fafb;padding:18px;border-radius:6px;box-shadow:0 1px 6px rgba(0,0,0,0.05);}
+.tool h3{margin-top:0;font-size:18px;}
+.tool a.btn{display:inline-block;margin-top:8px;color:#2563eb;font-weight:bold;text-decoration:none;}
+.badge{display:inline-block;font-size:12px;background:#e0f2fe;color:#075985;padding:2px 8px;border-radius:10px;margin-bottom:6px;}
+.badge.server{background:#fef3c7;color:#92400e;}
+.cta{text-align:center;margin-top:40px;}
+.cta a{background:#2563eb;color:white;text-decoration:none;padding:16px 30px;border-radius:6px;font-weight:bold;}
+nav.toc a{margin-right:14px;color:#2563eb;text-decoration:none;}
+footer{background:#111827;color:#ccc;text-align:center;padding:20px;margin-top:50px;font-size:14px;}
+footer a{color:white;text-decoration:none;margin:0 10px;}
 </style>
 
-<!-- Software Schema -->
+<!-- Website / tool suite schema -->
 <script type="application/ld+json">
 {
-"@context": "https://schema.org",
-"@type": "WebApplication",
-"name": "FreeConverto Image Converter",
-"url": "https://freeconverto.github.io/freeconverto/",
-"description": "Browser-based image converter that works without uploading files. Convert JPG, PNG, WebP, HEIC and AVIF instantly.",
-"applicationCategory": "Utility",
-"operatingSystem": "Any",
-"offers": {
-"@type": "Offer",
-"price": "0",
-"priceCurrency": "USD"
-}
+"@context":"https://schema.org",
+"@type":"WebApplication",
+"name":"FreeConverto",
+"url":"https://freeconverto.com",
+"description":"Free online file converter and utility tools: image converter, image compressor, image resizer, PNG to ICO, Word to PDF, PDF to Word and OCR PDF.",
+"applicationCategory":"UtilitiesApplication",
+"operatingSystem":"Any (works in any modern web browser)",
+"featureList":[
+"Convert WebP to JPG online",
+"Convert HEIC to JPG online",
+"Convert PNG to WebP",
+"Convert PNG to ICO favicon",
+"Compress images online without losing quality",
+"Resize images online",
+"Convert Word to PDF online",
+"Convert PDF to Word online",
+"OCR PDF to searchable text"
+],
+"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
 }
 </script>
 
-<!-- FAQ Schema -->
+<!-- FAQ schema (must match the visible FAQ below) -->
 <script type="application/ld+json">
 {
-"@context": "https://schema.org",
-"@type": "FAQPage",
-"mainEntity": [
-{
-"@type": "Question",
-"name": "Is this image converter really free?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Yes, FreeConverto is completely free with no hidden costs or watermarks."
-}
-},
-{
-"@type": "Question",
-"name": "Are my images uploaded to a server?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "No, all conversions happen locally in your browser for maximum privacy."
-}
-},
-{
-"@type": "Question",
-"name": "Which formats are supported?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "You can convert JPG, PNG, WebP, AVIF, HEIC and GIF formats."
-}
-}
+"@context":"https://schema.org",
+"@type":"FAQPage",
+"mainEntity":[
+{"@type":"Question","name":"Is FreeConverto really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. All tools are free to use with no watermark, no signup and no hidden fees."}},
+{"@type":"Question","name":"Are my images uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No. Image tools such as the image converter, compressor, resizer and PNG to ICO run inside your browser, so your photos stay on your device."}},
+{"@type":"Question","name":"Are my documents uploaded when I convert Word to PDF or PDF to Word?","acceptedAnswer":{"@type":"Answer","text":"Yes. Word to PDF, PDF to Word and OCR PDF need a server to process the file. This is different from the image tools, which run fully in your browser."}},
+{"@type":"Question","name":"Which image formats are supported?","acceptedAnswer":{"@type":"Answer","text":"You can convert JPG, PNG, WebP, AVIF, HEIC and GIF images."}},
+{"@type":"Question","name":"Can I convert HEIC photos from my iPhone to JPG?","acceptedAnswer":{"@type":"Answer","text":"Yes. Add your HEIC photos and choose JPG as the output format. Batch conversion is supported."}},
+{"@type":"Question","name":"Does it work on phones?","acceptedAnswer":{"@type":"Answer","text":"Yes. FreeConverto works in the browser on Windows, Mac, Linux, Android and iPhone with nothing to install."}}
 ]
 }
 </script>
-
 </head>
 
 <body>
 
 <header>
-<h1>Free Image Converter Online</h1>
-<p>Convert JPG, PNG, WebP, HEIC and AVIF instantly — no upload, no watermark</p>
+<h1>Free Online File Converter: Images, PDF &amp; Word</h1>
+<p>Convert WebP to JPG, HEIC to JPG, Word to PDF and more. No signup, no watermark.</p>
 </header>
 
 <div class="container">
 
 <div class="card">
-
-<h2>Convert Images Online Without Upload</h2>
-
+<h2>All-in-One Free Converter Tools Online</h2>
 <p>
-FreeConverto is a browser-based image converter that works completely offline.
-Unlike traditional tools, your files never leave your device, making it one of the safest ways to convert images online.
-You can convert WebP to JPG, PNG to WebP, HEIC to JPG, and more — instantly and for free.
+FreeConverto is a free set of online tools for converting, compressing and resizing files.
+Our image tools run directly in your browser, so your photos never leave your device.
+Our document tools (Word to PDF, PDF to Word and OCR PDF) are processed securely on our server.
+You can convert WebP to JPG, HEIC to JPG, PNG to WebP, make a favicon from a PNG, compress images for your website, and turn documents into PDF or editable Word files, all for free.
 </p>
+<p>Try the tools here: <a href="https://freeconverto.com">https://freeconverto.com</a></p>
+<nav class="toc">
+<a href="#image-tools">Image tools</a>
+<a href="#document-tools">PDF &amp; Word tools</a>
+<a href="#how-to">How to use</a>
+<a href="#faq">FAQ</a>
+</nav>
+</div>
 
-<p>
-Try the full tool here:
-<a href="https://freeconverto.com">https://freeconverto.com</a>
-</p>
+<div class="card" id="image-tools">
+<h2>Free Image Tools (Run in Your Browser, No Upload)</h2>
+<div class="tools">
 
+<div class="tool">
+<span class="badge">Browser-based</span>
+<h3>Image Converter</h3>
+<p>Convert JPG, PNG, WebP, AVIF, HEIC and GIF in seconds. Batch conversion supported.</p>
+<a class="btn" href="https://freeconverto.com">Open Image Converter &rarr;</a>
+</div>
+
+<div class="tool">
+<span class="badge">Browser-based</span>
+<h3>WebP to JPG Converter</h3>
+<p>Turn WebP images into JPG so they open in any app, email or website editor. Free and no upload.</p>
+<a class="btn" href="https://freeconverto.com">Convert WebP to JPG &rarr;</a>
+</div>
+
+<div class="tool">
+<span class="badge">Browser-based</span>
+<h3>HEIC to JPG Converter</h3>
+<p>Convert iPhone HEIC photos to JPG so you can share or upload them anywhere.</p>
+<a class="btn" href="https://freeconverto.com">Convert HEIC to JPG &rarr;</a>
+</div>
+
+<div class="tool">
+<span class="badge">Browser-based</span>
+<h3>PNG to WebP Converter</h3>
+<p>Make smaller, faster images for your website by converting PNG to WebP.</p>
+<a class="btn" href="https://freeconverto.com">Convert PNG to WebP &rarr;</a>
+</div>
+
+<div class="tool">
+<span class="badge">Browser-based</span>
+<h3>PNG to ICO (Favicon Maker)</h3>
+<p>Create a favicon.ico for your website from any PNG image.</p>
+<a class="btn" href="https://freeconverto.com">Convert PNG to ICO &rarr;</a>
+</div>
+
+<div class="tool">
+<span class="badge">Browser-based</span>
+<h3>Image Compressor</h3>
+<p>Compress JPG, PNG and WebP images for faster websites without visible quality loss.</p>
+<a class="btn" href="https://freeconverto.com">Compress Images &rarr;</a>
+</div>
+
+<div class="tool">
+<span class="badge">Browser-based</span>
+<h3>Image Resizer</h3>
+<p>Resize photos for Instagram, YouTube thumbnails, blogs and online stores.</p>
+<a class="btn" href="https://freeconverto.com">Resize Images &rarr;</a>
+</div>
+
+<!-- Uncomment when the AI Image Upscaler page is live and tested
+<div class="tool">
+<span class="badge">Browser-based</span>
+<h3>AI Image Upscaler</h3>
+<p>Enlarge photos up to 4x and make small images sharper.</p>
+<a class="btn" href="https://freeconverto.com/image-upscaler/">Upscale Images &rarr;</a>
+</div>
+-->
+
+</div>
+</div>
+
+<div class="card" id="document-tools">
+<h2>Free PDF &amp; Word Tools</h2>
+<div class="tools">
+
+<div class="tool">
+<span class="badge server">Server-processed</span>
+<h3>Word to PDF Converter</h3>
+<p>Convert DOC and DOCX files to PDF online for free, keeping your layout and fonts.</p>
+<a class="btn" href="https://freeconverto.com">Convert Word to PDF &rarr;</a>
+</div>
+
+<div class="tool">
+<span class="badge server">Server-processed</span>
+<h3>PDF to Word Converter</h3>
+<p>Turn a PDF into an editable Word document without retyping.</p>
+<a class="btn" href="https://freeconverto.com">Convert PDF to Word &rarr;</a>
+</div>
+
+<div class="tool">
+<span class="badge server">Server-processed</span>
+<h3>OCR PDF</h3>
+<p>Make scanned PDFs searchable and copyable by recognising the text inside them.</p>
+<a class="btn" href="https://freeconverto.com">OCR a PDF &rarr;</a>
+</div>
+
+</div>
+<p><small>Document tools are processed on our server because they need more power than a browser can provide.</small></p>
 </div>
 
 <div class="card">
-
 <h2>Why Use FreeConverto</h2>
-
 <div class="features">
-
-<div class="feature">
-<strong>No upload required</strong><br>
-All processing happens in your browser for privacy.
+<div class="feature"><strong>Free, no watermark</strong><br>No signup and no hidden costs.</div>
+<div class="feature"><strong>Private image tools</strong><br>Image conversion happens in your browser, so photos stay on your device.</div>
+<div class="feature"><strong>Batch conversion</strong><br>Convert many images at once.</div>
+<div class="feature"><strong>Many formats</strong><br>JPG, PNG, WebP, AVIF, GIF, HEIC, ICO, PDF and Word.</div>
+<div class="feature"><strong>Fast</strong><br>Image tools need no waiting for uploads or downloads.</div>
+<div class="feature"><strong>Works everywhere</strong><br>Windows, Mac, Android and iPhone.</div>
+</div>
 </div>
 
-<div class="feature">
-<strong>Batch image conversion</strong><br>
-Convert multiple images at the same time.
-</div>
-
-<div class="feature">
-<strong>Multiple formats supported</strong><br>
-JPG, PNG, WebP, AVIF, GIF and HEIC.
-</div>
-
-<div class="feature">
-<strong>Image compression</strong><br>
-Reduce file size for faster websites.
-</div>
-
-<div class="feature">
-<strong>Fast browser processing</strong><br>
-No waiting for server uploads or downloads.
-</div>
-
-<div class="feature">
-<strong>Works everywhere</strong><br>
-Compatible with Windows, Mac, Android and iPhone.
-</div>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>Popular Image Conversion Tasks</h2>
-
+<div class="card" id="how-to">
+<h2>Popular Conversion Tasks</h2>
 <ul>
-<li>Convert WebP to JPG online without upload</li>
-<li>Convert HEIC photos from iPhone to JPG</li>
-<li>Compress PNG images before uploading to blogs</li>
-<li>Resize images for social media platforms</li>
-<li>Optimize product photos for e-commerce stores</li>
+<li>Convert WebP to JPG online free without losing quality</li>
+<li>Convert HEIC photos from iPhone to JPG on Windows</li>
+<li>Convert PNG to WebP to make my website load faster</li>
+<li>Convert PNG to ICO to make a favicon for WordPress</li>
+<li>Compress images for web without losing quality</li>
+<li>Resize an image for Instagram, YouTube or a blog</li>
+<li>Convert Word to PDF online free without Microsoft Word</li>
+<li>Convert PDF to editable Word document free</li>
+<li>Make a scanned PDF searchable with OCR</li>
+<li>Optimize product photos for an online store</li>
 </ul>
 
+<h3>How to convert an image (3 steps)</h3>
+<ol>
+<li>Open <a href="https://freeconverto.com">freeconverto.com</a> and choose the tool you need.</li>
+<li>Add your file, or drag and drop it onto the page.</li>
+<li>Click convert, then download your result.</li>
+</ol>
 </div>
 
-<div class="card">
-
+<div class="card" id="faq">
 <h2>Frequently Asked Questions</h2>
 
-<h3>Is this image converter really free?</h3>
-<p>Yes, FreeConverto is completely free with no hidden costs or watermarks.</p>
+<h3>Is FreeConverto really free?</h3>
+<p>Yes. All tools are free to use with no watermark, no signup and no hidden fees.</p>
 
 <h3>Are my images uploaded to a server?</h3>
-<p>No, all conversions happen locally in your browser for maximum privacy.</p>
+<p>No. Image tools such as the image converter, compressor, resizer and PNG to ICO run inside your browser, so your photos stay on your device.</p>
 
-<h3>Which formats are supported?</h3>
-<p>You can convert JPG, PNG, WebP, AVIF, HEIC and GIF formats.</p>
+<h3>Are my documents uploaded when I convert Word to PDF or PDF to Word?</h3>
+<p>Yes. Word to PDF, PDF to Word and OCR PDF need a server to process the file. This is different from the image tools, which run fully in your browser.</p>
 
+<h3>Which image formats are supported?</h3>
+<p>You can convert JPG, PNG, WebP, AVIF, HEIC and GIF images.</p>
+
+<h3>Can I convert HEIC photos from my iPhone to JPG?</h3>
+<p>Yes. Add your HEIC photos and choose JPG as the output format. Batch conversion is supported.</p>
+
+<h3>Does it work on phones?</h3>
+<p>Yes. FreeConverto works in the browser on Windows, Mac, Linux, Android and iPhone with nothing to install.</p>
 </div>
 
 <div class="cta">
-<a href="https://freeconverto.com">
-Open Free Image Converter
-</a>
+<a href="https://freeconverto.com">Open FreeConverto Free Tools</a>
 </div>
 
 </div>
 
 <footer>
-
-<p>
-© 2026 FreeConverto – Free Online Image Converter
-</p>
-
+<p>&copy; 2026 FreeConverto – Free Online Image, PDF &amp; Word Tools</p>
 <p>
 <a href="https://freeconverto.com">Homepage</a> |
 <a href="https://freeconverto.com/privacy-policy">Privacy Policy</a> |
 <a href="https://freeconverto.com/contact">Contact</a>
 </p>
-
 </footer>
 
 </body>
